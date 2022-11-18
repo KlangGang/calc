@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="clac.css">
+
+    <script src="calc.js" defer></script>
+
+    <title>Miniräknare</title>
+</head>
+
+<body class="container">
+    <div class="order">
+        <div class="main">
+            <div class="calc-screen grid-col-span-4" id="calc-screen"></div>
+            <div class="calc-screen grid-col-span-4" id="calc-screen2"></div>
+            <button class="calc-btn" onClick="addDigit('7');">7</button>
+            <button class="calc-btn" onClick="addDigit('8');">8</button>
+            <button class="calc-btn" onClick="addDigit('9');">9</button>
+            <button class="calc-btn" onClick="btnBackSpace();">&#9003;</button>
+            <button class="calc-btn" onClick="addDigit('4');">4</button>
+            <button class="calc-btn" onClick="addDigit('5');">5</button>
+            <button class="calc-btn" onClick="addDigit('6');">6</button>
+            <button class="calc-btn" id="hight" onClick="hight();">Längd</button>
+            <button class="calc-btn" onClick="addDigit('1');">1</button>
+            <button class="calc-btn" onClick="addDigit('2');">2</button>
+            <button class="calc-btn" onClick="addDigit('3');">3</button>
+            <button class="calc-btn" id="wight" onClick="weight();">Vikt</button>
+            <button class="calc-btn" onClick="addDigit('0');">0</button>
+            <button class="calc-btn" onClick="addDigit('.');">.</button>
+            <button class="calc-btn" id="btn-calc" onClick="btnClearAll();">AC</button>
+            <button class="calc-btn" id="btn-calc" onClick="solve()">BMI</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <div class="arrows"> 
+        <p class="point" id="pointer">&leftarrow;</p>
+        <p class="point-weight" id="pointer-weight">&leftarrow;</p>
+    </div>
+</body>
+
+</html>
