@@ -7,7 +7,7 @@ const elemResult = document.getElementById("result");
 
 // instead of making the pointer dissaper or move i simply made i change color.
 // these functions cheeck wetther or not you have pressed weight or hight by tracking whatinput
-// what inpu is 1/hight by default.
+// whatinput is 1/hight by default.
 
 let whatinput = 1;
 
@@ -45,7 +45,7 @@ function solve() {
 
 function addDigit(thisSign) {
   // lägg till siffra
-  // Cheacks whatinput to see where it should place the numbers
+  // Cheacks whatinput is to see where it should place the numbers
   if (whatinput === 1) {
     elemCalcScreen.innerHTML += thisSign;
   } else {
@@ -55,7 +55,7 @@ function addDigit(thisSign) {
 
 function btnBackSpace() {
   // ta bort
-  // Cheacks whatinput to see where it should remove the numbers
+  // Cheacks whatinput is to see where it should remove the numbers
   if (whatinput === 1) {
     let calcScreen = elemCalcScreen.innerHTML;
     calcScreen = calcScreen.slice(0, -1);

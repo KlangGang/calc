@@ -82,10 +82,13 @@
 }
 
 .arrows {
-/* Everything but the arraws are made relativly responsive so for the best user experience use 90%zomm. */
+/* Everything but the arraws are made relativly responsive so for the best user experience use 90%zomm. 
+I thoght about highliting which one it was with the border but because i dont know how to make i blink
+So the color change just seemd needles.
+*/
     height: 100%;
 }
-/* these are the two pointing things that show in wich screen you are typing in */
+/* these are the two pointing things that show in which screen you are typing in */
 .point{
     font-size: xx-large;
     color: blue;
